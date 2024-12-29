@@ -1,4 +1,3 @@
-
 import { Request, Response } from 'express';
 import { login } from '../services/auth.service';
 

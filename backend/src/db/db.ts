@@ -33,12 +33,12 @@ db.sequelize = sequelize;
 // Initialize the User model
 db.users = UserModel(sequelize);
 
-sequelize.sync({ alter: true }) // 'alter: true' to sync without dropping existing tables
-    .then(() => {
-        console.log('Database & tables created!');
-    })
-    .catch((error) => {
-        console.error('Error creating database & tables:', error);
-    });
+// sequelize.sync({ alter: true }) // 'alter: true' to sync without dropping existing tables
+//     .then(() => {
+//         console.log('Database & tables created!');
+//     })
+//     .catch((error) => {
+//         console.error('Error creating database & tables:', error);
+//     });
 
 export default db; // Use `export default` to ensure consistency in importing
